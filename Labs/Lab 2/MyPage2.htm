@@ -1,0 +1,25 @@
+<html>
+<!-- Armando Dollia: Web Programmer -->
+<head>
+	<title>Introduction to Web Programming</title>
+</head>
+<body bgColor = "lavender">
+	<font face = "tahoma" size = "5">
+	<b>
+	<br>
+	<h2>Enter the values and click the button</h2>
+	<br>
+	<form name = "Form1">
+		<input type = "text" name = "one"> &nbsp;price
+		<br><br>
+		<input type = "text" name = "two"> &nbsp;quantity
+		<br><br>
+		<input type = "text" name = "three"> &nbsp;discount
+		<br><br>
+		<input type = "button" value = "Find Cost"
+		onClick = 'var cost = one.value * two.value - three.value;
+		var result = (cost > 100) ? "more than $ 100" : "$ " + cost;
+		window.alert("The cost is " + result);'>
+	</b>
+</body>
+</html>

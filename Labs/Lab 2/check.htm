@@ -1,0 +1,37 @@
+<html>
+<head>
+	<!-- Armando Dollia: Web Programmer -->
+<title>Checkbox Example</title>
+<script>
+function display()
+{
+	var message = "you selected ...";
+	if (eval("document.pizza.one.checked") == true)
+		message += "\n" + "mushrooms";
+	if (eval("document.pizza.two.checked") == true)
+		message += "\n" + "onions";
+	if (eval("document.pizza.three.checked") == true)
+		message += "\n" + "pepperoni";
+		if (eval("document.pizza.four.checked") == true)
+		message += "\n" + "spinach";
+	if (message == "you selected ...")
+		message = "plain cheese pizza ordered";
+	alert(message);
+}
+</script>
+</head>
+
+<body>
+<FONT face = "tahoma">
+<h2>choose the ingredients for your pizza</h2>
+<FORM ID = "Form1" name = "pizza">
+<INPUT TYPE = "checkbox" name = "one">&nbsp; mushrooms<br>
+<INPUT TYPE = "checkbox" name = "two">&nbsp; onions<br>
+<INPUT TYPE = "checkbox" name = "three">&nbsp; pepperoni<br>
+<INPUT TYPE = "checkbox" name = "four">&nbsp; spinach<br>
+<br>
+<INPUT TYPE = "button" Value = "order" onClick = "display()">
+</form>
+</FONT>
+</body>
+</html>
