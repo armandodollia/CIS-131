@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Armando Dollia: Web Programmer -->
+<head>
+<title>Welcome</title>
+<script type="text/javascript">
+function Go()
+{
+  var myFName = "";
+  var myLName = "";
+  var message = "";
+  myFName = document.form1.firstname.value;
+  myLName = document.form1.lastname.value;
+  message += myFName + " " + myLName;
+  window.alert("welcome: " + message);
+  return true;
+}
+</script>
+</head>
+<body style = "background-color:lightgreen; 
+font-family:tahoma;">
+<form name = "form1">
+[First Name]<br />
+<input type = "text" name = "firstname" />
+<br />
+[Last Name]<br />
+<input type = "text" name = "lastname" />
+<br />
+<br />
+<h3>Pick a team</h3>
+<input type = "radio" name = "sports" value = "bears" checked>
+Bears
+<br />
+<input type = "radio" name = "sports" value = "lions">
+Lions
+<br />
+<br />
+<h3>What is your preferred mode of transportation</h3>
+<input type = "checkbox" name = "vehicles" value = "bicycle">
+I prefer traveling with a bicycle.
+<br />
+<input type = "checkbox" name = "vehicles" value = "car">
+I prefer traveling with a car.
+<br />
+<input type = "checkbox" name = "vehicles" value = "train">
+I prefer traveling with a train.
+<br />
+<input type = "checkbox" name = "vehicles" value = "plane">
+I prefer traveling with a plane.
+<br />
+<br />
+Pick your favorite movie genre
+<select name = "movies">
+<option value = "action">Action</option>
+<option value = "romance">Romance</option>
+<option value = "adventure">Adventure</option>
+<option value = "scifi">Science Fiction</option>
+<option value = "horror">Horror</option>
+<option value = "comedy">Comedy</option>
+</select> 
+<br />
+<br />Your Comments
+<textarea name = "message" rows = "5" cols = "40">
+We value your remarks.
+</textarea>
+<input type = "button" value = "Submit" onclick = "Go();" />
+<table>
+<tr>
+	<td><img src="1.jpg" alt="laFerrari" windth="840" height="480">
+</table>
+</form>
+</body>
+</html>
