@@ -1,0 +1,49 @@
+/*
+   New Perspectives on HTML
+   Tutorial 3
+   Case Problem 1
+
+   ICI Text and Color Styles
+   Author: Armando Dollia
+   Date:   
+
+   Filename:         c_styles.css
+   Supporting Files: none
+
+*/
+
+body {
+	background-color: #000000;
+	color: #ffffff;
+	font-family: "Century Gothic", Sans-serif;
+}
+
+header h1{
+color: yellow;
+font-family: "Courier New";
+font-size: 28px;
+letter-spacing: 20px;
+text-align: center;
+}
+
+article h2 {
+font-size: 24px;
+letter-spacing: 5px;
+font-weight: normal;
+}
+
+article {
+	text-align: justify;
+}
+
+img[usemap=locks] {
+	border: 0px;
+}
+
+strong[class="keyword"] {
+color: yellow;
+}
+
+footer {
+	text-align: center;
+}
